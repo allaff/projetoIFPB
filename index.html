@@ -4,34 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>versão 1.0</title>
-
-<style type="text/css">
-        body{
-            background-attachment: fixed;
-            background-image: url(https://pixabay.com/get/gdd465110311760ecae68b8ab278745bba3f705ac6e8baa5c0ca335b79ad74e7f650124d02f4131ab10a0302dfa04d30e41b07ff8bd0c0b1722f887efbd001f0b_1920.png);
-            background-repeat: no-repeat;
-
-        }
-    </style>
-    <link href="style.css" type="text/css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5f39a63598.js" crossorigin="anonymous"></script>
+    <title>Página de login</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_light_color_272x92dp.png" alt="" >
-    </div>
-    <div style="font-family:Arial, Helvetica, sans-serif">
-        <h1 style="color: aliceblue">
+    <main class="container">
+        <h1>
             Login
         </h1>
-    </div>
-    <div>
-        <input type="email" placeholder="e-mail">
-        <input type="password" placeholder="password">
-        <button>
-            <a href="siteTeste.html">entrar</a>
-        </button>
-    </div>
-    
+        <form action="">
+            <div class="input-field">
+                <input type="email" name="E-mail" id="e-mail" placeholder="Digite seu e-mail">
+                <div class="underline"></div>
+            </div>
+            <div class="input-field">
+                <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
+                <div class="underline"></div>
+            </div>
+            <input type="submit" value="Entrar">
+        </form>
+        <div class="footer">
+            <span>
+                Entre por suas redes sociais
+            </span>
+            <div class="social-fields">
+                <div class="social-field instagram">
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <i class="fa-brands fa-instagram">
+                        </i>
+                        Entre pelo instagram
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                        Entre pelo Facebook
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
