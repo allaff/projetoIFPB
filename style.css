@@ -1,4 +1,31 @@
-h1{
-    position: center;
-    color: rgb(255,255,2555)
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", bold-700;
+}
+body{
+    /*background-image: url(https://pixabay.com/get/g841f7fde2bb31c02c0b9eeb936e5870e81a598898e07413c7b122474810b1d9f4ab2b54117a30183ca10e4e146ce3cfe8290b065ad756724961e11ef6c1d3a9d_1920.jpg);*/
+    background: linear-gradient(45deg, #b701ff, #3d032f);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+main.container{
+    background:#ffffff;
+    max-width: 400px;
+    min-height: 50vh;
+    padding: 2rem;
+    box-shadow: 10px 10px 20px rgba(0,0,2);
+    border-radius: 10px;
+    
+}
+main.h1{
+    font-weight: 800;
+    margin-bottom: 4rem;
 }
