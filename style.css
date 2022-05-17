@@ -8,7 +8,7 @@
 }
 body{
     /*background-image: url(https://pixabay.com/get/g841f7fde2bb31c02c0b9eeb936e5870e81a598898e07413c7b122474810b1d9f4ab2b54117a30183ca10e4e146ce3cfe8290b065ad756724961e11ef6c1d3a9d_1920.jpg);*/
-    background: linear-gradient(45deg, #b701ff, #3d032f);
+    background: linear-gradient(360deg, #080079, #dbd7da);
     background-repeat: no-repeat;
     min-height: 100vh;
     min-width: 100vw;
@@ -21,8 +21,8 @@ main.container{
     max-width: 400px;
     min-height: 50vh;
     padding: 2rem;
-    box-shadow: 10px 10px 20px rgba(0,0,2);
-    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgb(7, 2, 5);
+    border-radius: 20px;
     
 }
 main.h1{
