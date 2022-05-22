@@ -7,8 +7,7 @@
     font-family: "Ubuntu", bold-700;
 }
 body{
-    /*background-image: url(https://pixabay.com/get/g841f7fde2bb31c02c0b9eeb936e5870e81a598898e07413c7b122474810b1d9f4ab2b54117a30183ca10e4e146ce3cfe8290b065ad756724961e11ef6c1d3a9d_1920.jpg);*/
-    background: linear-gradient(360deg, #080079, #dbd7da);
+    background: linear-gradient(45deg, #790077, #1d0371);
     background-repeat: no-repeat;
     min-height: 100vh;
     min-width: 100vw;
@@ -21,8 +20,8 @@ main.container{
     max-width: 400px;
     min-height: 50vh;
     padding: 2rem;
-    box-shadow: 10px 10px 20px rgb(7, 2, 5);
-    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgb(0,0,0.2);
+    border-radius: 10px;
     
 }
 main h1{
@@ -38,7 +37,7 @@ main h1::before{ /* Pseudocodigo */
     bottom: 3px;
     left: 0;
     border-radius: 10px;
-    background: linear-gradient(45deg, #000000, #290099);
+    background-color: rgb(0, 0, 0.7);
 
 }
 form{
@@ -49,39 +48,92 @@ form{
 .input-field{
     position: relative;
 }
+form .input-field:first-child{
+    margin-bottom: 1.5rem;
+}
+.input-field .underline::before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+.input-field .underline::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: linear-gradient(45deg, #790077, #1d0371);
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+    transform-origin: left;
+}
+.input-field input:focus ~ .underline::after{
+    transform: scaleX(1);
+}
 .input-field input{
-    outline:auto;
-    padding: 1%;
+    outline:none;
+    padding: 2%;
     font-size: 0.9rem;
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
     
 }
 .input-field input::placeholder{
-    color:  rgba(0, 0, 0, 0.5);
+    color:  rgba(0, 0, 0, 0.7);
+    padding: auto;
 }
 
 form input[ type="submit"]{
     margin-top: 2rem;
     padding: 0.4rem;
-    background: linear-gradient(to left, rgb(0, 63, 209),rgb(41, 63, 114));
+    background: linear-gradient(to left, rgb(1, 77, 255),rgb(2, 33, 105));
     cursor: pointer;
-    color: bisque;
+    color: rgb(255, 255, 255);
     font-size: 0.9rem;
     font-weight: 300;
-    border-radius: 4px;
+    border-radius: 6px;
     transition: all 0.3s  ease;
 }
 form input[type="submit"]:hover{
     letter-spacing: 0.5px;
-    background: linear-gradient(to right, rgb(0, 63, 209),rgb(41, 63, 114));
+    background: linear-gradient(to right, rgb(1, 77, 255),rgb(2, 33, 105));
+    
 
 }
 .footer{
     display: flex;
     flex-direction: column;
-    margin-top: 2rem;
+    margin-top: 1rem;
 
 }
-#email{
-    outline-color: black;
+.footer span{
+    color: black;
+    font-size: 0.8rem;
+}
+.footer .social-field{
+    padding: 0.4rem;
+    border-radius: 4px;
+    font-size: 0.05rem;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 0.2rem;
+}
+.footer .social-field a i{
+    margin: 0 0.5rem;
+    width: 15px;
+}
+.footer .social-field a{
+    text-decoration:none;
+    color:white;
+    font-size: 10px;
+}
+.footer .social-field.instagram{
+    background:linear-gradient(to right, #ff0073, #ff0026);
+}
+.footer .social-field.facebook{
+    background:linear-gradient(to right, #004c93, #2804f7);
 }
