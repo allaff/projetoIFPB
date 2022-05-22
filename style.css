@@ -25,7 +25,63 @@ main.container{
     border-radius: 20px;
     
 }
-main.h1{
+main h1{
     font-weight: 800;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+main h1::before{ /* Pseudocodigo */
+    content: '';
+    position:absolute;
+    height: 2px;
+    width: 35px;
+    bottom: 3px;
+    left: 0;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #000000, #290099);
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    
+}
+.input-field{
+    position: relative;
+}
+.input-field input{
+    outline:auto;
+    padding: 1%;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.8);
+    
+}
+.input-field input::placeholder{
+    color:  rgba(0, 0, 0, 0.5);
+}
+
+form input[ type="submit"]{
+    margin-top: 2rem;
+    padding: 0.4rem;
+    background: linear-gradient(to left, rgb(0, 63, 209),rgb(41, 63, 114));
+    cursor: pointer;
+    color: bisque;
+    font-size: 0.9rem;
+    font-weight: 300;
+    border-radius: 4px;
+    transition: all 0.3s  ease;
+}
+form input[type="submit"]:hover{
+    letter-spacing: 0.5px;
+    background: linear-gradient(to right, rgb(0, 63, 209),rgb(41, 63, 114));
+
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+
+}
+#email{
+    outline-color: black;
 }
