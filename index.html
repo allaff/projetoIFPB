@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de login</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="import" href="api.py">
 </head>
 <body>
     <main class="container">
         <h1>Login</h1>
-        <form action="localhost:2000" method="post">
+        <form action="localhost:2000/primeirarota/input-field" method="post">
             <div class="input-field">
                 <input type="email" name="email" id="e-mail" placeholder="Digite seu e-mail"/>
                 <div class="underline"></div>               
@@ -21,6 +22,7 @@
             </div>
             <input type="submit" value="Entrar">
         </form>
+        <!--
         <div class="footer">
             <span>
                 Entre também por suas redes sociais
@@ -39,7 +41,10 @@
                     </a>
                 </div>
             </div>
-        </div>
+        -->
     </main>
+    <div id="imagem">
+        <img src="https://pixabay.com/get/gf638bf889903216ec6c5101022c2fbf74ffbf77e065b93460f7fd50e79fbae81dfc9c09eb71b4d02d47c435754b8e1d038874b4c9d8c3d4972c5a2770ce8281c_1920.png" alt="erro" width="auto" height="200px">
+</div>
 </body>
 </html>
