@@ -7,7 +7,7 @@
     font-family: "Ubuntu", bold-700;
 }
 body{
-    background: linear-gradient(45deg, #790077, #1d0371);
+    background-image: url(https://pixabay.com/get/g12fe61e3e216b3552a6cb8a2f69629b1706f7959493a346d019184b421772fba64596d1b1d9ecfd1b1dc5b89710dde34.png);
     background-repeat: no-repeat;
     min-height: 100vh;
     min-width: 100vw;
@@ -16,16 +16,16 @@ body{
     justify-content: center;
 }
 main.container{
-    background:#ffffff;
-    max-width: 400px;
-    min-height: 50vh;
+    background:rgb(255, 255, 255);
+    max-width: auto;
+    min-height:auto;
     padding: 2rem;
     box-shadow: 10px 10px 20px rgb(0,0,0.2);
     border-radius: 10px;
     
 }
 main h1{
-    font-weight: 800;
+    font-weight: 800px;
     margin-bottom: 2rem;
     position: relative;
 }
@@ -90,50 +90,21 @@ form .input-field:first-child{
 form input[ type="submit"]{
     margin-top: 2rem;
     padding: 0.4rem;
-    background: linear-gradient(to left, rgb(1, 77, 255),rgb(2, 33, 105));
+    background-color: #1d0371;
     cursor: pointer;
     color: rgb(255, 255, 255);
     font-size: 0.9rem;
     font-weight: 300;
     border-radius: 6px;
-    transition: all 0.3s  ease;
+    transition: all 0.5s  ease;
 }
 form input[type="submit"]:hover{
     letter-spacing: 0.5px;
-    background: linear-gradient(to right, rgb(1, 77, 255),rgb(2, 33, 105));
+    background-color: #2b03ad;
+}
+#imagem{
+    padding:1rem;
+    width:auto;
+    height:auto;
     
-
-}
-.footer{
-    display: flex;
-    flex-direction: column;
-    margin-top: 1rem;
-
-}
-.footer span{
-    color: black;
-    font-size: 0.8rem;
-}
-.footer .social-field{
-    padding: 0.4rem;
-    border-radius: 4px;
-    font-size: 0.05rem;
-    width: 100%;
-    cursor: pointer;
-    margin-top: 0.2rem;
-}
-.footer .social-field a i{
-    margin: 0 0.5rem;
-    width: 15px;
-}
-.footer .social-field a{
-    text-decoration:none;
-    color:white;
-    font-size: 10px;
-}
-.footer .social-field.instagram{
-    background:linear-gradient(to right, #ff0073, #ff0026);
-}
-.footer .social-field.facebook{
-    background:linear-gradient(to right, #004c93, #2804f7);
 }
