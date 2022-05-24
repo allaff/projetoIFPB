@@ -7,7 +7,9 @@
     font-family: "Ubuntu", bold-700;
 }
 body{
-    background-image: url(https://pixabay.com/get/g12fe61e3e216b3552a6cb8a2f69629b1706f7959493a346d019184b421772fba64596d1b1d9ecfd1b1dc5b89710dde34.png);
+    
+   /* background-image: url(https://pixabay.com/get/g12fe61e3e216b3552a6cb8a2f69629b1706f7959493a346d019184b421772fba64596d1b1d9ecfd1b1dc5b89710dde34.png);*/
+    background-color: rgb(90, 92, 91);
     background-repeat: no-repeat;
     min-height: 100vh;
     min-width: 100vw;
