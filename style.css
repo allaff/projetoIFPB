@@ -20,7 +20,7 @@ body{
 main.container{
     background:rgb(255, 255, 255);
     max-width: auto;
-    min-height:auto;
+    min-height: auto;
     padding: 2rem;
     box-shadow: 10px 10px 20px rgb(0,0,0.2);
     border-radius: 10px;
